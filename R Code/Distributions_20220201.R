@@ -16,7 +16,7 @@ plot(p3, col=rgb(0,1,0,1/4), add=T)
 # Scatter plot for weather condition
 plot(belfastdata$temperature,belfastdata$humidity, main="Temperature vs humidity")
 
-# Histogram for all pollutants
+# Density for all pollutants
 par(mfrow=c(2,2))
 d1<-density(pollutants$PM2.5, na.rm = TRUE)
 d2<-density(pollutants$NO2, na.rm = TRUE)
